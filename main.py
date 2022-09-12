@@ -1,5 +1,6 @@
 import json
 import time
+import random
 import os
 from json import loads as json_loads
 from os import path as os_path, getenv
@@ -292,6 +293,7 @@ def get_account():
 
 
 if __name__ == '__main__':
+    time.sleep(random.randint(1,300))
     uid, psw = get_account()
     # print(uid, psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
