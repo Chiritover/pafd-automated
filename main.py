@@ -293,7 +293,7 @@ def get_account():
 
 
 if __name__ == '__main__':
-    time.sleep(random.randint(1,300))
+    time.sleep(random.randint(1,900))
     uid, psw = get_account()
     # print(uid, psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
